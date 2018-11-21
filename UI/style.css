@@ -1,7 +1,7 @@
 body {
       font-family: Arial,Helvetica,sans-serif;
       font-size:15px;
-      line-height:1.5;
+      line-height:2.0;
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
@@ -63,59 +63,49 @@ header .highlight, header .current a {
   font-weight:bold;
 }
 header a:hover{
-  color:blue;
+  color:red;
   font-weight:bold;
 
 }
 /* showcase**/
 #showcase{
   min-height: 650px;
-  background:#f0f0f0;
+  background-color: #fefbd8;
   text-align: center;
-  color: #fff;
+  color: black;
 
 }
 #showcase h1{
   margin-top: 100px;
-  font-size: 55px;
+  font-size: 60px;
   margin-bottom: 10px;
+}
+#showcase q{
+  font-size: 40px;
 }
 
 #newsletter{
-  min-height: 20px;
-  padding: 15px;
+  min-height: 50px;
+  padding: 20px;
   color: Green;
   background: #35424a;
 }
 #newsletter h1{
-  float:left;
+  float: right;
 }
-/* boxes */
-
-#boxes{
-  margin-top: 20px;
-}
-
-#boxes .box{
-  float: left;
-  text-align: center;
+aside#sidebar{
+  margin: auto;
   width: 30%;
-  padding: 10px;
+  margin-top: 10px;
 }
-#boxes .box img{
-  width:90px;
-}
-/*services**/
-ul#services li{
-  list-style: none;
-  padding: 20px;
-  border: :#cccccc solid 1px;
-  margin-bottom: 5px;
-  background: #e6e6e6;
-}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding: 5px;
+  }
+
 footer{
-  padding: 15px;
-  margin-top: 50px;
+  padding: 30px;
+  margin-top: 0px;
   color:#fff;
   background-color: #e8491d;
   text-align: center;
