@@ -138,6 +138,7 @@ aside#sidebar{
   width: 30%;
   margin-top: 10px;
 }
+
 aside#sidebar .quote input
 {
  width:90%;
@@ -147,7 +148,6 @@ aside#sidebar .quote textarea{
  width:90%;
  padding: 20px;
  }
-
 footer{
   padding: 30px;
   margin-top: 0px;
