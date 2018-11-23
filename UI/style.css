@@ -114,10 +114,7 @@ header a:hover{
 #uploc{
   float: inherit;
 }
-#feel{
-  width: auto;
-  min-height: 400px;
-}
+
 #scene{
   margin-top: 50px;
 }
@@ -137,6 +134,7 @@ aside#sidebar{
   margin: auto;
   width: 30%;
   margin-top: 10px;
+  
 }
 aside#sidebar .quote input
 {
