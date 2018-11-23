@@ -25,6 +25,17 @@ ul{
   padding-right: 20px;
   color: #fff;
 }
+.button_2{
+  height: 38px;
+  background: #e8491d;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  margin-top: 400px;
+  margin-left: 200px;;
+
+}
 /* header **/
 header{
   background: #35424a;
@@ -91,16 +102,25 @@ header a:hover{
   color: black;
   width: 100%;
   padding: 20px;
-  
+
   }
-  #star td,tr{
+#star td,tr{
     padding: 15px;
     text-align: left;
     border: 5px solid black;
 
 
   }
-
+#uploc{
+  float: inherit;
+}
+#feel{
+  width: auto;
+  min-height: 400px;
+}
+#scene{
+  margin-top: 50px;
+}
 
 
 #newsletter{
@@ -118,11 +138,16 @@ aside#sidebar{
   width: 30%;
   margin-top: 10px;
 }
-aside#sidebar .quote input, aside#sidebar .quote textarea{
-  width:90%;
-  padding: 5px;
-  }
 
+aside#sidebar .quote input
+{
+ width:90%;
+ padding: 20px;
+ }
+aside#sidebar .quote textarea{
+ width:90%;
+ padding: 20px;
+ }
 footer{
   padding: 30px;
   margin-top: 0px;
