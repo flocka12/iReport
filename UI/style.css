@@ -25,6 +25,17 @@ ul{
   padding-right: 20px;
   color: #fff;
 }
+.button_2{
+  height: 38px;
+  background: #e8491d;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+  margin-top: 400px;
+  margin-left: 200px;;
+
+}
 /* header **/
 header{
   background: #35424a;
@@ -84,6 +95,31 @@ header a:hover{
   font-size: 40px;
 }
 
+#star{
+  min-height: 400px;
+  background-color: #fefbd8;
+  text-align: center;
+  color: black;
+  width: 100%;
+  padding: 20px;
+
+  }
+  #star td,tr{
+    padding: 15px;
+    text-align: left;
+    border: 5px solid black;
+
+
+  }
+#uploc{
+  float: inherit;
+}
+#feel{
+  width: auto;
+  min-height: 700px;
+}
+
+
 #newsletter{
   min-height: 50px;
   padding: 20px;
@@ -106,7 +142,7 @@ aside#sidebar .quote textarea{
 aside#sidebar .quote input{
     width:90%;
     padding: 20px;
-  }
+}
 footer{
   padding: 30px;
   margin-top: 0px;
