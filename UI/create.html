@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="flocka">
+    <title>iReporter|Create</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <div class ="container">
+        <div id = "branding">
+          <h1> <span class = "highlight">ireporter</span> </h1>
+        </div>
+        <nav>
+          <ul>
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="./admin.html">Admin</a></li>
+            <li><a href="./account.html">Account</a></li>
+            <li class="current"><a href="./create.html">Create</a></li>
+            <li><a href="./view.html">view</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+            <a href="./signin.html">LOGOUT</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <aside id="sidebar">
+
+          <h3> <u>New Report</u></h3>
+          <form class="quote">
+            <fieldset id="feel">
+              <div>
+                <div>
+                    <label>Name</label><br>
+                    <textarea placeholder="Name"></textarea>
+                </div>
+
+
+            <div>
+              <label>Type</label><br>
+              <select name="Reports">
+                <option value="Red-Flag">Red-Flag</option>
+                <option value="Intervention">Intervention</option>
+              </select>
+            </div>
+            <div>
+                <label>Description</label><br>
+                <textarea placeholder="Describe.."></textarea>
+            </div>
+            <p>Click the button to get your coordinates.</p>
+
+            <button onclick="getLocation()">Try It</button>
+
+            <p id="demo"></p>
+              <form id="uploc">
+                <fieldset id="scene">
+                 <input type="file" name="fileupload" value="fileupload" id="fileupload">
+                 <label for="fileupload"> Select a file to upload</label>
+                 <input type="submit" value="submit">
+               </fieldset>
+              </form>
+
+
+
+            <script src="./uploc.js">
+
+            </script>
+
+
+
+
+            <button class="button_2" type="submit">CREATE</button>
+            </fieldset>
+          </form>
+        </div>
+      </aside>
+    </body>
+  </html>
