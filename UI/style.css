@@ -32,7 +32,7 @@ ul{
   padding-left: 20px;
   padding-right: 20px;
   color: #fff;
-  margin-top: 400px;
+  margin-top:100px;
   margin-left: 200px;;
 
 }
@@ -116,7 +116,7 @@ header a:hover{
 }
 #feel{
   width: auto;
-  min-height: 400px;
+  height: 750px;
 }
 #scene{
   margin-top: 50px;
