@@ -44,7 +44,7 @@ ul{
   padding-right: 20px;
   color: #fff;
   margin-top: 400px;
-  margin-left: 1700px;
+  margin-left: 0px;
 
 
 }
@@ -119,7 +119,8 @@ header a:hover{
 #star td,tr{
     padding: 15px;
     text-align: left;
-    border: 5px solid black;
+
+    border-right: 5px solid black;
 
 
   }
