@@ -1,0 +1,463 @@
+body{
+  background-color: #BDBDBD;
+}
+
+
+/*pre-loader*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  
+}
+.loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+
+  -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+  z-index: 1001;
+}
+
+  .loader:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #e74c3c;
+
+      -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  }
+
+  .loader:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #f9c922;
+
+      -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+        animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  }
+
+  @-webkit-keyframes spin {
+      0%   { 
+          -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: rotate(0deg);  /* IE 9 */
+          transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+      }
+      100% {
+          -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: rotate(360deg);  /* IE 9 */
+          transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+      }
+  }
+  @keyframes spin {
+      0%   { 
+          -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: rotate(0deg);  /* IE 9 */
+          transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+      }
+      100% {
+          -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: rotate(360deg);  /* IE 9 */
+          transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+      }
+  }
+
+  .preloader .loader-section {
+      position: fixed;
+      top: 0;
+      width: 51%;
+      height: 100%;
+      z-index: 1000;
+      -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: translateX(0);  /* IE 9 */
+      transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+  }
+
+  .preloader .loader-section.section-left {
+      left: 0;
+  }
+
+  .preloader .loader-section.section-right {
+      right: 0;
+  }
+
+  /* Loaded */
+  .loaded .preloader .loader-section.section-left {
+      -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: translateX(-100%);  /* IE 9 */
+              transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+      -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+              transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+      
+      background-color: #AFAEAC;
+  }
+
+  .loaded .preloader .loader-section.section-right {
+      -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: translateX(100%);  /* IE 9 */
+              transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+      transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+      background-color: #AFAEAC;
+  }
+  
+  .loaded .preloader {
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-out;  
+              transition: all 0.3s ease-out;
+  }
+  .loaded .preloader {
+      visibility: hidden;
+
+      -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+          -ms-transform: translateY(-100%);  /* IE 9 */
+              transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+      -webkit-transition: all 0.3s 1s ease-out;  
+              transition: all 0.3s 1s ease-out;
+  }
+
+/*navbar*/
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 30px;
+	font-family: merienda;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+	font-family: poppins;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+}
+.navbar-nav a {
+	font-family: poppins;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navbar-light .navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: black;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: red;
+}
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus {
+	color: black;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: black;
+}
+.w-100 {
+	height: 100vh;
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav.ml-auto {
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.navbar-nav a {
+		font-size: 14px;
+		font-weight: normal;
+	}
+}
+
+/*services*/
+hr.divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: red;
+  opacity: 1;
+}
+
+hr.divider-light {
+  background-color: #fff;
+}
+
+/*about section*/
+.page-section {
+  padding: 6rem 0;
+}
+.page-section h2.section-heading, .page-section .section-heading.h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.page-section h3.section-subheading, .page-section .section-subheading.h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 4rem;
+}
+
+
+/*projects*/
+.showcase .showcase-text {
+  padding: 3rem;
+
+}
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding-top: 14rem;
+  }
+}
+#onecolor{
+  background: #C97F2A;
+}
+#twocolor{
+  background: #5e9dea;
+}
+#thirdcolor{
+  background: #A8142A;
+}
+#fourthcolor{
+  background: #6B4929;
+}
+#fifthcolor{
+  background:  #9E9E9E;
+}
+#sixthcolor{
+  background: #51ee53;
+}
+#seventhcolor{
+  background:  #6a3901;
+}
+
+/*hover effect*/
+.overlay {
+  position: absolute;
+  top: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+#hover1:hover .overlay {
+  opacity: 0.5;
+}
+#hover2:hover .overlay {
+  opacity: 0.5;
+}
+#hover3:hover .overlay {
+  opacity: 0.5;
+}
+#hover4:hover .overlay {
+  opacity: 0.5;
+}
+#hover5:hover .overlay {
+  opacity: 0.5;
+}
+#hover6:hover .overlay {
+  opacity: 0.5;
+}
+
+/*portfolio*/
+#exampleModal .modal-dialog{
+  max-width: 90%;
+  margin: 0;
+  top: 3rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 11rem;
+  height: 100vh;
+  display: flexbox;
+}
+#exampleModal1 .modal-dialog{
+  max-width: 95%;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  display: flexbox;
+}
+#exampleModal2 .modal-dialog{
+  max-width: 95%;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  display: flexbox;
+}
+#exampleModal3 .modal-dialog{
+  max-width: 90%;
+  margin: 0;
+  top: 3rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 11rem;
+  height: 100vh;
+  display: flexbox;
+}
+#exampleModal4 .modal-dialog{
+  width: 45rem; 
+  height: 30rem; 
+  margin-top: 5rem; 
+  margin-bottom: 5rem;
+  padding-bottom: 12rem;
+}
+#exampleModal5 .modal-dialog{
+  width: 45rem; 
+  height: 30rem; 
+  margin-top: 5rem; 
+  margin-bottom: 5rem;
+  padding-bottom: 12rem;
+}
+#exampleModal .showcase-img, #exampleModal1 .showcase-img, #exampleModal2 .showcase-img, #exampleModal3 .showcase-img, #exampleModal4 .showcase-img, #exampleModal5 .showcase-img{
+	background-size: cover;
+  min-height: 35rem;
+}
+
+#exampleModal .container-fluid .portfolio-box, #exampleModal1 .container-fluid .portfolio-box, #exampleModal2 .container-fluid .portfolio-box, #exampleModal3 .container-fluid .portfolio-box, #exampleModal4 .container-fluid .portfolio-box, #exampleModal5 .container-fluid .portfolio-box{
+  position: relative;
+  display: block;
+}
+#exampleModal .container-fluid .portfolio-box .portfolio-box-caption, #exampleModal1 .container-fluid .portfolio-box .portfolio-box-caption, #exampleModal2 .container-fluid .portfolio-box .portfolio-box-caption, #exampleModal3 .container-fluid .portfolio-box .portfolio-box-caption, #exampleModal4 .container-fluid .portfolio-box .portfolio-box-caption, #exampleModal5 .container-fluid .portfolio-box .portfolio-box-caption{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(244, 98, 58, 0.9);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+#exampleModal .container-fluid .portfolio-box .portfolio-box-caption .project-category, #exampleModal1 .container-fluid .portfolio-box .portfolio-box-caption .project-category, #exampleModal2 .container-fluid .portfolio-box .portfolio-box-caption .project-category, #exampleModal3 .container-fluid .portfolio-box .portfolio-box-caption .project-category, #exampleModal4 .container-fluid .portfolio-box .portfolio-box-caption .project-category, #exampleModal5 .container-fluid .portfolio-box .portfolio-box-caption .project-category{
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#exampleModal .container-fluid .portfolio-box .portfolio-box-caption .project-name, #exampleModal1 .container-fluid .portfolio-box .portfolio-box-caption .project-name, #exampleModal2 .container-fluid .portfolio-box .portfolio-box-caption .project-name, #exampleModal3 .container-fluid .portfolio-box .portfolio-box-caption .project-name, #exampleModal4 .container-fluid .portfolio-box .portfolio-box-caption .project-name, #exampleModal5 .container-fluid .portfolio-box .portfolio-box-caption .project-name{
+  font-size: 1.2rem;
+}
+#exampleModal .container-fluid .portfolio-box:hover .portfolio-box-caption, #exampleModal1 .container-fluid .portfolio-box:hover .portfolio-box-caption, #exampleModal2 .container-fluid .portfolio-box:hover .portfolio-box-caption, #exampleModal3 .container-fluid .portfolio-box:hover .portfolio-box-caption, #exampleModal4 .container-fluid .portfolio-box:hover .portfolio-box-caption, #exampleModal5 .container-fluid .portfolio-box:hover .portfolio-box-caption{
+  opacity: 1;
+}
+
+
+/*contact section*/
+.contact-section {
+    padding-top: 5rem;
+}
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid purple;
+}
+.contact-section .card h4, .contact-section .card .h4 {
+  font-size: 0.8rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.contact-section .card hr {
+  border-color: purple;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+.contact-section .social {
+  margin-top: 5rem;
+}
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.contact-section .social a:active {
+  color: #fff;
+}
+
+/*footer*/
+.footer {
+  padding: 3rem 0;
+  margin-bottom: auto;
+}
